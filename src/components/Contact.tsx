@@ -125,7 +125,7 @@ const Contact = () => {
                       id="name"
                       name="name"
                       required
-                      placeholder="John Doe"
+                      placeholder="Your name"
                       className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all duration-300"
                     />
                   </div>
@@ -141,7 +141,7 @@ const Contact = () => {
                       id="email"
                       name="email"
                       required
-                      placeholder="john@example.com"
+                      placeholder="Your email address"
                       className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all duration-300"
                     />
                     <ValidationError
