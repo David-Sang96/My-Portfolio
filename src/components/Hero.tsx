@@ -30,12 +30,20 @@ const Hero = () => {
             See My Projects
             <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform duration-300" />
           </a>
-
           <a
-            href="#about"
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium"
+            href="/David_Sang_CV.pdf"
+            download
+            onClick={() => {
+              if (window.gtag) {
+                window.gtag("event", "download_cv", {
+                  event_category: "engagement",
+                  event_label: "Hero Section CV Download",
+                });
+              }
+            }}
+            className="inline-flex items-center gap-3 px-8 py-4 border border-primary text-primary rounded-full font-medium transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:-translate-y-1"
           >
-            More about me
+            Download CV
           </a>
         </div>
       </div>

@@ -3,6 +3,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Route, Routes } from "react-router";
+import AnalyticsTracker from "./components/AnalyticsTracker";
+import ScrollToTopButton from "./components/ScrollToTopBtn";
 import { ThemeProvider } from "./components/theme-provider";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -16,11 +18,13 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <AnalyticsTracker />
           <Routes>
             <Route path="/" element={<Index />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <ScrollToTopButton />
         </BrowserRouter>
       </TooltipProvider>
     </ThemeProvider>
