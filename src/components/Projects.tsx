@@ -1,7 +1,9 @@
 import note from "@/assets/d-notes.jpg";
 import fashion from "@/assets/fashion_blog.jpg";
+import fruit from "@/assets/fruit.png";
 import iCoreImg from "@/assets/iCore.png";
 import recipe from "@/assets/recipes.jpg";
+import nike from "@/assets/shoes.png";
 import tradehub from "@/assets/tradehub.png";
 import { ArrowUpRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
@@ -43,7 +45,7 @@ const projects: Project[] = [
     image: note,
   },
   {
-    id: 1,
+    id: 4,
     title: "Online Market Platform",
     category: "Web Development",
     description:
@@ -52,13 +54,31 @@ const projects: Project[] = [
     image: tradehub,
   },
   {
-    id: 1,
+    id: 5,
     title: "Recipe Sharing Platform",
     category: "Web Development",
     description:
       "A platform for food lovers to create, share, and explore recipes with user profiles and save features.",
     demo: "https://foodie-front-r4x6.onrender.com/sign-in",
     image: recipe,
+  },
+  {
+    id: 6,
+    title: "Nike Landing Page",
+    category: "Web Development",
+    description:
+      "A modern and responsive Nike-inspired landing page showcasing product highlights with clean UI design and structured layout.",
+    demo: "https://nike-tail123.netlify.app/",
+    image: nike,
+  },
+  {
+    id: 7,
+    title: "Fruit Store Landing Page",
+    category: "Web Development",
+    description:
+      "An animated fruit store landing page built with React and Framer Motion, featuring smooth transitions and interactive UI effects.",
+    demo: "https://fresh-fruit-122.netlify.app/",
+    image: fruit,
   },
 ];
 
