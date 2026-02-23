@@ -1,8 +1,8 @@
 import note from "@/assets/d-notes.jpg";
 import fashion from "@/assets/fashion_blog.jpg";
 import iCoreImg from "@/assets/iCore.png";
-import netflix from "@/assets/netflix.jpg";
 import recipe from "@/assets/recipes.jpg";
+import tradehub from "@/assets/tradehub.png";
 import { ArrowUpRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
@@ -28,7 +28,8 @@ const projects: Project[] = [
     id: 2,
     title: "Fashion Blog",
     category: "Web Development",
-    description: "A simple landing page of Fashion Blog Posts",
+    description:
+      "A responsive landing page for a fashion blog showcasing featured posts with a clean and modern UI design.",
     demo: "https://blog-landing-xi.vercel.app/",
     image: fashion,
   },
@@ -37,18 +38,18 @@ const projects: Project[] = [
     title: "Note Application",
     category: "Web Development",
     description:
-      "A simple app for users to create, manage, and share their notes with images effortlessly.",
+      "A full-stack note-taking application that enables users to create, organize, search, and manage notes with image support.",
     demo: "https://dnotepri.onrender.com",
     image: note,
   },
   {
     id: 1,
-    title: "Movie Platform",
+    title: "Online Market Platform",
     category: "Web Development",
     description:
-      "A Netflix-inspired streaming app showcasing movies and series with user authentication and watch the favorite movies.",
-    demo: "https://movie-app-kozt.onrender.com/",
-    image: netflix,
+      "A full-stack marketplace application that allows users to browse products, register, authenticate, and manage listings with secure user authentication.",
+    demo: "https://market-app-frontend.onrender.com/#/",
+    image: tradehub,
   },
   {
     id: 1,
